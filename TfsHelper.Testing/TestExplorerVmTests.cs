@@ -42,41 +42,6 @@ namespace TfsHelper.Testing
                 }
             }
 
-            return;
-            var suites = arcTestPlan.RootSuite.Entries;
-
-            foreach (var suite in suites)
-            {
-                string suiteOutput = string.Format("{0}", suite.Title);
-                Console.WriteLine(suiteOutput);
-            }
-
-            var regressionSuiteEntry = suites.FirstOrDefault(p => p.Title.Contains("Regression"));
-            Assert.IsNotNull(regressionSuiteEntry);
-
-            var regressionSuite = regressionSuiteEntry.TestSuite;
-            Assert.IsNotNull(regressionSuite);
-
-            foreach (var testCase in regressionSuite.AllTestCases.Where(p => !p.IsAutomated).Take(10))
-            {
-                Console.WriteLine("-------------------------------------------------------------------------------");
-                var testResults = vm.TestManagementTeamProject.TestResults.ByTestId(testCase.Id).Where(p => p.BuildNumber == "ArcInstallerMainLine_2.1.46.0");
-
-                var lastResult = testResults.LastOrDefault();
-
-
-                var resultString = lastResult == null ? "[null]" : lastResult.ToString();
-
-
-
-                string testCaseOutput = string.Format("{0} - {1} - {2} - {3}", testCase.Id, resultString, testCase.Title, testCase.Reason);
-                Console.WriteLine(testCaseOutput);
-            }
-
-
-
-
-
         }
 
 
