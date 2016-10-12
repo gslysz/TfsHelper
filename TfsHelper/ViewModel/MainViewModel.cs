@@ -25,7 +25,7 @@ namespace TfsHelper.ViewModel
     /// See http://www.galasoft.ch/mvvm
     /// </para>
     /// </summary>
-    public class MainViewModel : ViewModelBase
+    public class MainViewModel : BaseVm
     {
         private Uri _tfsUri;
         private Project _selectedProject;
@@ -44,12 +44,10 @@ namespace TfsHelper.ViewModel
 
             TfsUri = new Uri(@"http://softdevtfs:8080/tfs/cadwell");
 
-
             DeleteSelectedWorkItemCommand = new RelayCommand(DeleteSelectedWorkItem);
             RefreshUriCommand = new RelayCommand(RefreshUri);
 
             RefreshUri();
-
         }
 
 

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TfsHelper", "TfsHelper\TfsHelper.csproj", "{973FD0B0-73D7-4EF3-839A-2C5A46BD861C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TfsHelper.Testing", "TfsHelper.Testing\TfsHelper.Testing.csproj", "{EC3A5F03-3815-4A41-A558-35560E7390EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{973FD0B0-73D7-4EF3-839A-2C5A46BD861C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{973FD0B0-73D7-4EF3-839A-2C5A46BD861C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{973FD0B0-73D7-4EF3-839A-2C5A46BD861C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3A5F03-3815-4A41-A558-35560E7390EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3A5F03-3815-4A41-A558-35560E7390EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3A5F03-3815-4A41-A558-35560E7390EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3A5F03-3815-4A41-A558-35560E7390EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
